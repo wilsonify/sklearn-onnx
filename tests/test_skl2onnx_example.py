@@ -90,5 +90,4 @@ def test_knn(iris_df):
     prediction_from_saved_df.columns = prediction_from_saved_df.columns.map("plant_type_is_{}".format)
 
     prediction_from_saved_df['plant_type_pred'] = pd.Series(prediction_from_saved[0])
-    prediction_from_saved_df
     assert prediction_from_saved_df.shape == (x_nda.shape[0], 4)
